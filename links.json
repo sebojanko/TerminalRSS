@@ -1,0 +1,12 @@
+{
+  "links": [
+    "https://www.vecernji.hr/feeds/latest",
+    "https://www.muzika.hr/feed/",
+    "https://www.muzika.hr/feed/?cat=11",
+    "https://www.muzika.hr/feed/?cat=18",
+    "https://www.muzika.hr/feed/?cat=3",
+    "https://www.muzika.hr/feed/?cat=5",
+    "http://www.meteoalarm.eu/documents/rss/hr.rss",
+    "http://www.meteoalarm.eu/ATOM/HR.xml"
+  ]
+}
