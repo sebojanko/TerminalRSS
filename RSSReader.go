@@ -14,8 +14,6 @@ func init() {
 func main() {
 	var feeds []*gofeed.Feed
 
-	//TODO feed se ucitava tek kad otvorimo taj screen
-
 	feedLinks := getLinks()
 	feeds = retrieveFeeds(feedLinks)
 
