@@ -5,6 +5,14 @@ Golang RSS reader in terminal with go-tui, a terminal UI library
 
 `go build`
 
+### Running
+
+`./TerminalRSS`
+
+### Using
+
+Use the arrow keys to move through the UI, exit with `q`, enter link in Firefox with `Enter`
+
 ### Add RSS feeds
 
 To add RSS feeds, update the JSON file `links.json`
