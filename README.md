@@ -11,7 +11,7 @@ Golang RSS reader in terminal with go-tui, a terminal UI library
 
 ### Using
 
-Use the arrow keys to move through the UI, exit with `q`, enter link in Firefox with `Enter`
+Use the arrow keys to move through the UI, exit with `q`, open link in Firefox with `Enter`
 
 ### Add RSS feeds
 
