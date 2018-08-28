@@ -95,11 +95,11 @@ func onSelectionChanged(table *tui.Table, feed *gofeed.Feed, label *tui.Label) {
 	table.OnSelectionChanged(func(t *tui.Table) {
 		item := t.Selected()
 		htmlTags, _ := regexp.Compile("<.*?>")
+
 		articleDescription := feed.Items[item].Description
-
-		articleDescription = additionalCleanup(feed.Title, articleDescription)
-
+		articleDescription = cleanup(feed.Title, articleDescription)
 		articleDescription = htmlTags.ReplaceAllString(articleDescription, "")
+
 		label.SetText(articleDescription)
 	})
 }

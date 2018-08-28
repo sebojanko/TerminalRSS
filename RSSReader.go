@@ -5,6 +5,12 @@ import (
 	"log"
 )
 
+var Cleaners map[string]string
+
+func init() {
+	Cleaners = getCleaners()
+}
+
 func main() {
 	var feeds []*gofeed.Feed
 

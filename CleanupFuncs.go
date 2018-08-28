@@ -1,16 +1,15 @@
 package main
 
-import "regexp"
+import (
+	"regexp"
+)
 
-func additionalCleanup(title string, articleDescription string) string {
-	if title == "muzika.hr" {
-		articleDescription = cleanUpMuzikaHr(articleDescription)
+func cleanup(title, articleDescription string) string {
+	cleanupPattern, err := regexp.Compile(Cleaners[title])
+	if err != nil {
+		panic(err)
 	}
-	return articleDescription
-}
-
-func cleanUpMuzikaHr(articleDescription string) string {
-	objavaTags, _ := regexp.Compile("Objava <.*?>.*</p>")
-	articleDescription = objavaTags.ReplaceAllString(articleDescription, "")
+	
+	articleDescription = cleanupPattern.ReplaceAllString(articleDescription, "")
 	return articleDescription
 }
